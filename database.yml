@@ -1,0 +1,7 @@
+development:
+  adapter: mysql2
+  database: archrec
+  host: localhost
+  username: root
+  password: mike23
+  encoding: utf8
