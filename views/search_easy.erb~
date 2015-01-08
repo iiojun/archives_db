@@ -1,0 +1,17 @@
+﻿<div id="search_box">
+	<h1>簡易検索</h1>
+		<p>
+			<form method = "post" action = "search_easy_result">
+  			<input type="text" name="keyword">
+  			<input type="submit" value="検索">
+			<a href="search_detail">詳細検索</a><br /><br />
+			<a href="http://localhost:4567">最初に戻る</a>
+		</p>
+</div>
+
+<div id="bottom">
+ 	<address>Copyright(c) XXX資料室</address><br />
+	<a href="">注意・免責事項</a><br />
+	<a href="">このデータベースの使い方</a>
+</div>
+</form>

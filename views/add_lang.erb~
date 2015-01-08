@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Test</title>
+</head>
+<body id="langbody">
+<h2>言語登録</h2>
+<table id="lang_table">
+<tr>
+<th>言語コード</th>
+<th>言語</th>
+</tr>
+
+<% @langs.each do |lang| %>
+<tr>
+<td><%= lang.lang_cd %></td>
+<td><%= lang.language %></td>
+<form method="post" action="del_lang">
+<td><input type="submit" value="削除"></td>
+<input type="hidden" name="lang_cd" value="<%= lang.lang_cd %>">
+<input type="hidden" name="_method" value="delete">
+</form>
+</tr>
+<% end %>
+
+<form method="post" action="new_lang">
+<tr>
+<td><input type="text" name="lang_cd"></td>
+<td><input type="text" name="language"></td>
+<td><input type="submit" value="登録"></td>
+</tr>
+</form>
+</table>
+</body>
+</html>

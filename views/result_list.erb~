@@ -1,0 +1,30 @@
+﻿<h3>検索結果</h3>
+<% if @results.length > 0 %>
+<%= @results.length %>件のデータが見つかりました。
+<table id="results_table">
+<tr>
+<th>レファレンスコード</th>
+<th>タイトル</th>
+<th>記述レベル</th>
+<th>年代</th>
+<th>内容</th>
+</tr>
+<ul>
+ <% @results.each do |result| %>
+<tr id="result">
+  <td><%= result.ref_cd %></td>
+  <td><a href="/show_item/byid/<%= result.ref_cd %>"><%= result.title %></a></td>
+  <td><%= result.lang_cd %></th>
+  <td><%= result.lod %></th>
+  <td><%= result.date_start %>ー<%= result.date_end %></td>
+  <td><%= result.scope_content %></td>
+</tr>
+ <% end %>
+</ul>
+</table>
+<% else %>
+該当するデータが見つかりませんでした。
+<% end %>
+<div id="bottom">
+<a href="search_easy">戻る</a>
+</div>
