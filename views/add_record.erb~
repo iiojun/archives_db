@@ -1,0 +1,8 @@
+<h1>資料登録</h1>
+ <ul>
+  <li><a href="search_easy">資料種別登録へ</a></li>
+  <li><a href="search_easy">組織・個人名称登録へ</a></li>
+  <li><a href="search_easy">アップロードファイル登録へ</a></li>
+  <li><a href="search_details">言語登録へ</a></li>
+  <li><a href="search_details">レコード登録へ</a>注意：レコード登録を行う前には、上記の各項目を必ずチェックしてください</li>
+　</ul>

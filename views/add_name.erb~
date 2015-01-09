@@ -1,0 +1,36 @@
+<body id="namebody">
+<h2>個人・組織名称登録</h2>
+<table id="name_table">
+<tr>
+<th>作成者ID</th>
+<th>名前または名称</th>
+<th>フリガナ</th>
+<th>英字</th>
+<th>誕生・創立日</th>
+<th>死亡・消滅日</th>
+</tr>
+
+<% @names.each do |name| %>
+<tr>
+<td><%= name.creator_id %></td>
+<td><%= name.name %></td>
+<td><%= name.name_hurigana %></td>
+<td><%= name.name_eng %></td>
+<td><%= name.date_birth %></td>
+<td><%= name.date_decease %></td>
+</tr>
+<% end %>
+
+<form method="post" action="new_name">
+<tr>
+<td><input type="text" name="creator_id"></td>
+<td><input type="text" name="name"></td>
+<td><input type="text" name="name_hurigana"></td>
+<td><input type="text" name="name_eng"></td>
+<td><input type="text" name="date_birth"></td>
+<td><input type="text" name="date_decease"></td>
+<td><input type="submit" value="登録"></td>
+</tr>
+</form>
+</table>
+</body>

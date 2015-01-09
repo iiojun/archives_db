@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+body{margin-left: 20%;}
+h1#top{margin: 0}
+
+div#search_box{text-align:center}
+div#bottom{position:absolute; bottom:25%; width:100%; text-align:center}
+
+table#gmd_table{width: 800px; padding: 0px; border: solid 0px #66aa66; margin-left: auto; margin-right: auto; margin-top: 0}
+table#name_table{width: 100px; padding: 0px; border: solid 0px #66aa66; margin-left: auto; margin-right: auto; margin-top: 0}
+table#lang_table{width: 500px; padding: 0px; border: solid 0px #66aa66; margin-left: auto; margin-right: auto; margin-top: 0}
+table#ufile_table{width: 500px; padding: 0px; border: solid 0px #66aa66; margin-left: auto; margin-right: auto; margin-top: 0}
+table#results_table{width: 1000px; padding: 0px; border: solid 0px #66aa66; margin-left: auto; margin-right: auto; margin-top: 0}
+h2{text-align:center}
+th{font-size:10pt; background: #99ffff}
+tr{background: #ffffe0}
+td{text-align:center}
+a{font-size: 0.75em}

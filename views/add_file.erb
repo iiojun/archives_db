@@ -1,0 +1,33 @@
+<body id="ufilebody">
+<h2>アップロードファイル登録</h2>
+<table id="ufile_table">
+<tr>
+<th>ファイルID</th>
+<th>PATH</th>
+<th>ファイル</th>
+</tr>
+
+<% @ufiles.each do |ufile| %>
+<tr>
+<td><%= ufile.upfile_id %></td>
+<td><%= ufile.path %></td>
+<td><%= ufile.upfile %></td>
+<form method="post" action="del_ufile">
+<td><input type="submit" value="削除"></td>
+<input type="hidden" name="upfile_id" value="<%= ufile.upfile_id %>">
+<input type="hidden" name="_method" value="delete">
+</form>
+</tr>
+<% end %>
+
+<form method="post" action="new_ufile">
+<tr>
+<td><input type="text" name="upfile_id"></td>
+<td><input type="text" name="path"></td>
+<td><input type="file" name="upfile"></td>
+<td><input type="submit" value="登録"></td>
+</tr>
+</form>
+</table>
+</body>
+

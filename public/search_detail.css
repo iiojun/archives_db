@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+body{margin: 0;}
+h1#top{margin: 0;}
+a{font-size: 0.75em}
+div#search_box_left{position:absolute; left:20%; width:100%; text-align:left}
+div#search_box_right{position:absolute; left:50%; width:100%; text-align:left}
+div#search_button{position:absolute; bottom:25%; width:100%; text-align:center}
+div#bottom{position:absolute; width:100%; bottom:10%; text-align:center}

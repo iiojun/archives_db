@@ -1,0 +1,33 @@
+<body id="gmdbody">
+<h2>資料種別登録</h2>
+<table id="gmd_table">
+<tr>
+<th>一般・特別資料種別</th>
+<th>資料種別</th>
+<th>単位</th>
+</tr>
+
+<% @gmds.each do |gmd| %>
+<tr>
+<td><%= gmd.gmd_smd_id %></td>
+<td><%= gmd.material_type %></td>
+<td><%= gmd.unit %></td>
+<form method="post" action="del_gmd">
+<td><input type="submit" value="削除"></td>
+<input type="hidden" name="gmd_smd_id" value="<%= gmd.gmd_smd_id %>">
+<input type="hidden" name="_method" value="delete">
+</form>
+</tr>
+<% end %>
+
+<form method="post" action="new_gmd">
+<tr>
+<td><input type="text" name="gmd_smd_id"></td>
+<td><input type="text" name="material_type"></td>
+<td><input type="text" name="unit"></td>
+<td><input type="submit" value="登録"></td>
+</tr>
+</form>
+</table>
+</body>
+
